@@ -93,3 +93,7 @@ coverage/
 
 # Points de contrôle Jupyter (si vous en utilisez pour des tests ou de l'analyse)
 .ipynb_checkpoints/
+
+csv/
+*.csv
+output.json
