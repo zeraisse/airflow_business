@@ -1,0 +1,95 @@
+# Fichier généré pour ignorer les fichiers inutiles dans Git.
+# Les commentaires expliquent à quoi correspondent les différentes sections.
+
+### Fichiers spécifiques aux systèmes d'exploitation ###
+.DS_Store
+Thumbs.db
+
+### Fichiers de configuration des éditeurs et IDE ###
+.idea/
+.vscode/
+*.sublime-*
+
+### Backend Python & Streamlit ###
+
+# Environnements virtuels
+# Ne jamais commiter les environnements virtuels
+venv/
+.venv/
+env/
+ENV/
+
+# Fichiers de cache et de compilation Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers de distribution et de packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Fichiers de configuration sensibles
+# Les fichiers .env contiennent des variables d'environnement comme des clés d'API
+# et ne doivent jamais être partagés. [2, 10, 13]
+.env
+.env.*
+
+# Fichiers de secrets Streamlit [3]
+.streamlit/secrets.toml
+
+# Cache MyPy, un vérificateur de type statique
+.mypy_cache/
+
+# Fichiers de base de données locaux
+*.sqlite3
+
+### Frontend React / Vite ###
+
+# Dépendances
+# Le dossier node_modules contient toutes les dépendances du projet frontend
+# et peut être très volumineux. Il est recréé avec `npm install` ou `yarn install`. [15]
+node_modules/
+
+# Fichiers de build
+# Le dossier 'dist' est généré lors de la compilation du projet frontend. [13]
+dist/
+dist-ssr/ # Pour le Server-Side Rendering avec Vite
+
+# Fichiers de log
+# Les logs ne sont utiles qu'en développement local. [20]
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Fichiers locaux de configuration
+*.local
+
+# Fichiers de cache
+.npm
+
+# Rapport de couverture de tests
+coverage/
+
+# Fichiers temporaires et de sauvegarde
+*.tmp
+*.bak
+
+# Points de contrôle Jupyter (si vous en utilisez pour des tests ou de l'analyse)
+.ipynb_checkpoints/
