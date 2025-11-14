@@ -1,0 +1,1 @@
+# Tes variables (URLs, Timeouts)
