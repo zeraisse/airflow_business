@@ -4,7 +4,7 @@ mettre enterprise.csv dans le dossier kbo_scraper
 
 # cmd
 ```bash
-scrapy startproject kbo_scraper
+docker network create business-net
 cd kbo_scraper
 scrapy crawl kbo_company -o ./sprapping/output.json
 ```
